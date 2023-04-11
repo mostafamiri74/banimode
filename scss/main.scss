@@ -1,0 +1,14 @@
+@import './fonts';
+@import './responsive';
+@import './variable';
+
+@font-face {
+    font-family: "iranyekan";
+    src: url("../font/iranyekan/iranyekanwebregularfanum.eot"),
+        url("../font/iranyekan/iranyekanwebregularfanum.ttf"),
+        url("../font/iranyekan/iranyekanwebregularfanum.woff");
+}
+
+body {
+    font-family: "iranyekan";
+}

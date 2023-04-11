@@ -1,0 +1,18 @@
+{
+  "name": "banimode-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "watch": "node-sass --include-path scss scss/main.scss css/main.css -w ",
+    "bulid":"node-sass --include-path scss scss/main.scss css/main.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
