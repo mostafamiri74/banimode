@@ -1,8 +1,134 @@
+.modal-content {
+  padding: 10px 50px;
+  border-radius: 0; }
+
 @font-face {
   font-family: "iranyekan";
-  src: url("../font/iranyekan/iranyekanwebregularfanum.eot"), url("../font/iranyekan/iranyekanwebregularfanum.ttf"), url("../font/iranyekan/iranyekanwebregularfanum.woff")
-}
+  src: url("../font/iranyekan/iranyekanwebregularfanum.eot"), url("../font/iranyekan/iranyekanwebregularfanum.ttf"), url("../font/iranyekan/iranyekanwebregularfanum.woff"); }
 
 body {
-  font-family: "iranyekan"
-}
+  font-family: "iranyekan";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none !important; }
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1250px; } }
+
+.btn-login {
+  color: #fff;
+  background-color: #00bf6f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00bf6f;
+  border-radius: 50em;
+  text-align: center;
+  transition: all 0.3s;
+  width: 140px;
+  height: 40px;
+  padding: 5px 15px;
+  display: inline-block; }
+  .btn-login:hover {
+    border-width: 2px;
+    transition: all 0.3s; }
+  .btn-login:hover {
+    transition: all 0.3s;
+    background-color: #00bf6f; }
+
+header .search-box #search-input {
+  width: 100%;
+  border-radius: 50em;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  height: 50px;
+  padding-right: 50px;
+  padding-left: 20px; }
+
+header .search-box #search-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent; }
+  header .search-box #search-btn .fa-search {
+    font-size: 27px; }
+
+header #basket-icon {
+  height: 27px;
+  width: 27px;
+  color: #000; }
+  header #basket-icon i {
+    font-size: 29px;
+    transition: all 0.3s linear; }
+    header #basket-icon i:hover {
+      transition: all 0.3s linear;
+      color: #00bf6f; }
+
+header nav {
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 13px;
+  font-weight: 600; }
+  header nav .nav-item .nav-link {
+    position: relative; }
+    header nav .nav-item .nav-link::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #00bf6f;
+      height: 2px;
+      width: 0;
+      transition: all 0.4s ease-out; }
+    header nav .nav-item .nav-link:hover::before {
+      width: 100%; }
+  header nav .nav-item .fa-bars {
+    font-size: 20px; }
+  header nav .mega-menu,
+  header nav .brands {
+    position: relative; }
+    header nav .mega-menu::after,
+    header nav .brands::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      background-color: #ccc;
+      width: 2px;
+      height: 22px;
+      border-radius: 10px; }
+  header nav .mega-menu::after {
+    left: 0px; }
+  header nav .brands::after {
+    right: 1px; }
+
+#search-input-modal {
+  width: 100%;
+  border-radius: 50em;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  height: 50px;
+  padding-right: 50px;
+  padding-left: 20px; }
+
+#search-btn-modal {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent; }
+  #search-btn-modal .fa-search {
+    font-size: 27px; }
+
+.modal-dialog {
+  max-width: 100%; }

@@ -1,5 +1,5 @@
 {
-  "name": "banimode-project",
+  "name": "banimode",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "watch": "node-sass --include-path scss scss/main.scss css/main.css -w ",
-    "bulid":"node-sass --include-path scss scss/main.scss css/main.css --output-style compressed"
+    "build": "node-sass --include-path scss scss/main.scss css/main.css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
