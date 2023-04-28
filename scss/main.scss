@@ -2,6 +2,7 @@
 @import "./responsive";
 @import "./variable";
 @import "./mixins";
+@import "./mega-menu";
 
 @font-face {
   font-family: "iranyekan";
@@ -79,6 +80,8 @@ header {
     font-weight: 600;
 
     .nav-item {
+      height: 28px;
+
       .nav-link {
         position: relative;
 
