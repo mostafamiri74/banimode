@@ -29,7 +29,9 @@ a {
   text-decoration: none !important;
   color: #000;
 }
+
 @media (min-width: 1200px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -38,22 +40,26 @@ a {
     max-width: 1250px;
   }
 }
+
 .btn-login {
   @include button();
   width: 140px;
   height: 40px;
   padding: 5px 15px;
   display: inline-block;
+
   &:hover {
     transition: all 0.3s;
     background-color: $green-color;
   }
 }
+
 header {
   .search-box {
     #search-input {
       @include search-input();
     }
+
     #search-btn {
       position: absolute;
       right: 8px;
@@ -61,6 +67,7 @@ header {
       border: none;
       outline: none;
       background-color: transparent;
+
       .fa-search {
         font-size: 27px;
       }
@@ -71,6 +78,7 @@ header {
     height: 27px;
     width: 27px;
     color: #000;
+
     i {
       font-size: 29px;
       transition: all 0.3s linear;
@@ -115,6 +123,7 @@ header {
         font-size: 20px;
       }
     }
+
     .mega-menu,
     .brands {
       position: relative;
@@ -143,23 +152,132 @@ header {
     }
   }
 }
-#search-input-modal {
-  @include search-input();
-}
-#search-btn-modal {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  .fa-search {
-    font-size: 27px;
+
+#SearchBoxModal {
+  .modal-content {
+    padding: 10px 50px;
+    border-radius: 0;
+  }
+
+  #search-input-modal {
+    @include search-input();
+  }
+
+  #search-btn-modal {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    .fa-search {
+      font-size: 27px;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 100%;
   }
 }
 
-.modal-dialog {
-  max-width: 100%;
+#loginModal {
+
+  .modal-dialog {
+
+    .modal-content {
+
+      border-radius: 16px;
+
+      .modal-header {
+        border-bottom: none;
+      }
+
+      .btn-login {
+        height: 60px;
+        vertical-align: middle;
+        line-height: 3;
+        @include button($border-radius: 20px)
+      }
+
+      .input-group {
+        height: 60px;
+        border-radius: 12px;
+      }
+
+      .input-group-text {
+        border-left: none !important;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+      }
+
+      .form-check-input:checked {
+        background-color: $green-color;
+        border-color: $green-color;
+      }
+
+      input.form-control {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+
+        border-right: none !important;
+      }
+
+      .form-check-label {
+        font-size: 14px;
+        text-align: center;
+        color:#797979;
+        a {
+          text-decoration: underline !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+#SMSModal{
+  .modal-dialog{
+    .modal-content{
+      .modal-header {
+        border-bottom: none;
+      }
+
+      p{
+        color: #797979;
+        font-size: 14px;
+      }
+      .edit-number{
+        color:$green-color;
+      }
+      .btn-call{
+        @include button();
+        width: 100%;
+        display: block;
+        height: 40px;
+        line-height: 2.2;
+      }
+      .btn-sms{
+        @include button($background-color:transparent,$color:$green-color);
+        width: 100%;
+        display: block;
+        height: 40px;
+        line-height: 2.2;
+      }
+      .token-input{
+        width: 60px;
+        height: 55px;
+        margin: 0 15px;
+        border-radius: 12px;
+            border: solid 1px #d6d5d5;
+      }
+    }
+  }
 }
 
 .page {
@@ -263,3 +381,4 @@ footer {
     }
   }
 }
+
