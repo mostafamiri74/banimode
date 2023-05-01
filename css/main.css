@@ -2142,8 +2142,15 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  color: #000; }
 
 @media (min-width: 1200px) {
   .container,
@@ -2359,3 +2366,78 @@ header nav {
   margin: 0 15px;
   border-radius: 12px;
   border: solid 1px #d6d5d5; }
+.page-about-us p {
+  direction: rtl;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px; }
+
+.page-about-us h1 {
+  font-size: 20px;
+  font-weight: 600; }
+
+footer .footer-title {
+  color: gray;
+  padding-bottom: 32px;
+  font-size: 16px;
+  font-weight: 500; }
+
+footer .footer-link {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.2s all;
+  display: inline-block;
+  width: max-content; }
+  footer .footer-link::after {
+    content: " ";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #00bf6f;
+    opacity: 0;
+    transition: 0.3s opacity, transform 0.35s;
+    transform: scale(0, 1); }
+  footer .footer-link:hover {
+    color: #00bf6f; }
+  footer .footer-link:hover:after {
+    opacity: 1;
+    transform: scale(1); }
+
+footer .footer-contact-info {
+  line-height: 46px;
+  padding-left: 20px;
+  float: right;
+  font-size: 16px; }
+  footer .footer-contact-info a {
+    direction: ltr; }
+
+footer .footer-app-download {
+  display: block;
+  width: 70%;
+  color: #00bf6f;
+  border: 1px solid #00bf6f;
+  border-radius: 23px;
+  margin: 33px auto;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  transition: 0.2s all; }
+
+footer .footer-copyright {
+  font-weight: 600;
+  font-size: 12px; }
+
+footer .footer-social-icon li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  line-height: 43px;
+  text-align: center;
+  margin-right: 12px; }
+  footer .footer-social-icon li a:hover {
+    border: 1px solid #00bf6f; }
