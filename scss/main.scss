@@ -29,9 +29,27 @@ a {
   text-decoration: none !important;
   color: #000;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (min-width: 1200px) {
-
   .container,
   .container-lg,
   .container-md,
@@ -182,11 +200,8 @@ header {
 }
 
 #loginModal {
-
   .modal-dialog {
-
     .modal-content {
-
       border-radius: 16px;
 
       .modal-header {
@@ -197,7 +212,7 @@ header {
         height: 60px;
         vertical-align: middle;
         line-height: 3;
-        @include button($border-radius: 20px)
+        @include button($border-radius: 20px);
       }
 
       .input-group {
@@ -209,7 +224,6 @@ header {
         border-left: none !important;
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
-
       }
 
       .form-check-input:checked {
@@ -227,54 +241,49 @@ header {
       .form-check-label {
         font-size: 14px;
         text-align: center;
-        color:#797979;
+        color: #797979;
         a {
           text-decoration: underline !important;
         }
-
       }
-
     }
-
   }
-
 }
 
-
-#SMSModal{
-  .modal-dialog{
-    .modal-content{
+#SMSModal {
+  .modal-dialog {
+    .modal-content {
       .modal-header {
         border-bottom: none;
       }
 
-      p{
+      p {
         color: #797979;
         font-size: 14px;
       }
-      .edit-number{
-        color:$green-color;
+      .edit-number {
+        color: $green-color;
       }
-      .btn-call{
+      .btn-call {
         @include button();
         width: 100%;
         display: block;
         height: 40px;
         line-height: 2.2;
       }
-      .btn-sms{
-        @include button($background-color:transparent,$color:$green-color);
+      .btn-sms {
+        @include button($background-color: transparent, $color: $green-color);
         width: 100%;
         display: block;
         height: 40px;
         line-height: 2.2;
       }
-      .token-input{
+      .token-input {
         width: 60px;
         height: 55px;
         margin: 0 15px;
         border-radius: 12px;
-            border: solid 1px #d6d5d5;
+        border: solid 1px #d6d5d5;
       }
     }
   }
@@ -382,3 +391,22 @@ footer {
   }
 }
 
+.main-page {
+  &-slider {
+    figure {
+      img {
+        border-radius: 16px;
+      }
+    }
+
+    &_top-left {
+      @include slider();
+    }
+
+    &_down-right {
+      .swiper-right-down {
+        @include slider();
+      }
+    }
+  }
+}
