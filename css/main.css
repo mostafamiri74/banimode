@@ -2286,20 +2286,20 @@ header nav {
   font-size: 20px;
   font-weight: 600; }
 
-.footer-title {
+footer .footer-title {
   color: gray;
   padding-bottom: 32px;
   font-size: 16px;
   font-weight: 500; }
 
-.footer-link {
+footer .footer-link {
   font-size: 14px;
   font-weight: 500;
   position: relative;
   transition: 0.2s all;
   display: inline-block;
   width: max-content; }
-  .footer-link::after {
+  footer .footer-link::after {
     content: " ";
     position: absolute;
     bottom: -4px;
@@ -2310,21 +2310,21 @@ header nav {
     opacity: 0;
     transition: 0.3s opacity, transform 0.35s;
     transform: scale(0, 1); }
-  .footer-link:hover {
+  footer .footer-link:hover {
     color: #00bf6f; }
-  .footer-link:hover:after {
+  footer .footer-link:hover:after {
     opacity: 1;
     transform: scale(1); }
 
-.footer-contact-info {
+footer .footer-contact-info {
   line-height: 46px;
   padding-left: 20px;
   float: right;
   font-size: 16px; }
-  .footer-contact-info a {
+  footer .footer-contact-info a {
     direction: ltr; }
 
-.footer-app-download {
+footer .footer-app-download {
   display: block;
   width: 70%;
   color: #00bf6f;
@@ -2336,11 +2336,11 @@ header nav {
   font-size: 14px;
   transition: 0.2s all; }
 
-.footer-copyright {
+footer .footer-copyright {
   font-weight: 600;
   font-size: 12px; }
 
-.footer-social-icon li a {
+footer .footer-social-icon li a {
   display: block;
   width: 45px;
   height: 45px;
@@ -2349,5 +2349,5 @@ header nav {
   line-height: 43px;
   text-align: center;
   margin-right: 12px; }
-  .footer-social-icon li a:hover {
+  footer .footer-social-icon li a:hover {
     border: 1px solid #00bf6f; }
