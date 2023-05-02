@@ -43,6 +43,7 @@
       border: 1px solid #888;
       bottom: 30px;
       opacity: 0;
+      z-index: 11111111;
       transition: all 0.3s linear;
       &:after {
         font-size: 12px;
