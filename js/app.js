@@ -7,7 +7,7 @@ var swiper = new Swiper(".swiper-left-top", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
-    clickable: true 
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -15,17 +15,16 @@ var swiper = new Swiper(".swiper-left-top", {
   },
 });
 
-
 var swiper = new Swiper(".swiper-right-down", {
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 4500,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
-    clickable: true 
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
