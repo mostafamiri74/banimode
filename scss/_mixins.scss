@@ -30,3 +30,55 @@
   padding-right: 50px;
   padding-left: 20px;
 }
+@mixin slider() {
+  .swiper-button {
+    &-next,
+    &-prev {
+      width: 35px;
+      height: 35px;
+      color: #000;
+      background-color: white;
+      font-weight: 700;
+      border-radius: 50em;
+      border: 1px solid #888;
+      bottom: 30px;
+      opacity: 0;
+      z-index: 11111111;
+      transition: all 0.3s linear;
+      &:after {
+        font-size: 12px;
+      }
+    }
+    &-next {
+      top: unset;
+      right: 60px;
+    }
+    &-prev {
+      top: unset;
+      right: 10px;
+    }
+  }
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 35px;
+
+    &-bullet {
+      opacity: 0.5;
+      width: 8px;
+      height: 8px;
+
+      &-active {
+        background-color: #fff;
+        width: 16px;
+        height: 6px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
