@@ -2574,3 +2574,165 @@ footer .footer-social-icon li a {
     transform: scale(1.04); }
   .main-page-category__item-link figure img {
     transition: all 0.72s ease; }
+
+.main-page-amazing .swiper-slide:hover .main-page-amazing-slider__image-hover-show, .main-page-bestsilling .swiper-slide:hover .main-page-amazing-slider__image-hover-show {
+  opacity: 1; }
+
+.main-page-amazing__title a figure, .main-page-bestsilling__title a figure {
+  width: 306px;
+  height: 55px; }
+
+.main-page-amazing__countdown, .main-page-bestsilling__countdown {
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+  .main-page-amazing__countdown #countdown, .main-page-bestsilling__countdown #countdown {
+    display: flex;
+    justify-content: center; }
+  .main-page-amazing__countdown #countdown div, .main-page-bestsilling__countdown #countdown div {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #f16423;
+    color: #fff;
+    border-radius: 5px;
+    width: 50px;
+    font-weight: 700;
+    text-align: center; }
+  .main-page-amazing__countdown-title span, .main-page-bestsilling__countdown-title span {
+    color: #00bf6f;
+    font-size: 20px;
+    font-weight: 600; }
+
+.main-page-amazing__slider .swiper-amazing .swiper-slide,
+.main-page-amazing__slider .swiper-bestsilling .swiper-slide, .main-page-bestsilling__slider .swiper-amazing .swiper-slide,
+.main-page-bestsilling__slider .swiper-bestsilling .swiper-slide {
+  display: block; }
+
+.main-page-amazing__slider .swiper-amazing .swiper-button-next,
+.main-page-amazing__slider .swiper-amazing .swiper-button-prev,
+.main-page-amazing__slider .swiper-bestsilling .swiper-button-next,
+.main-page-amazing__slider .swiper-bestsilling .swiper-button-prev, .main-page-bestsilling__slider .swiper-amazing .swiper-button-next,
+.main-page-bestsilling__slider .swiper-amazing .swiper-button-prev,
+.main-page-bestsilling__slider .swiper-bestsilling .swiper-button-next,
+.main-page-bestsilling__slider .swiper-bestsilling .swiper-button-prev {
+  color: #707070; }
+  .main-page-amazing__slider .swiper-amazing .swiper-button-next:after,
+  .main-page-amazing__slider .swiper-amazing .swiper-button-prev:after,
+  .main-page-amazing__slider .swiper-bestsilling .swiper-button-next:after,
+  .main-page-amazing__slider .swiper-bestsilling .swiper-button-prev:after, .main-page-bestsilling__slider .swiper-amazing .swiper-button-next:after,
+  .main-page-bestsilling__slider .swiper-amazing .swiper-button-prev:after,
+  .main-page-bestsilling__slider .swiper-bestsilling .swiper-button-next:after,
+  .main-page-bestsilling__slider .swiper-bestsilling .swiper-button-prev:after {
+    font-size: 23px; }
+
+.main-page-amazing-slider__image, .main-page-bestsilling-slider__image {
+  position: relative;
+  display: block; }
+  .main-page-amazing-slider__image::after, .main-page-bestsilling-slider__image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 115, 119, 0.07);
+    border-radius: 8px; }
+  .main-page-amazing-slider__image figure, .main-page-bestsilling-slider__image figure {
+    position: relative; }
+    .main-page-amazing-slider__image figure figcaption, .main-page-bestsilling-slider__image figure figcaption {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 50px;
+      width: 50px;
+      line-height: 3;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #f16423;
+      border-radius: 50em;
+      text-align: center; }
+  .main-page-amazing-slider__image-hover-show, .main-page-bestsilling-slider__image-hover-show {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    transition: all 0.3s linear; }
+
+.main-page-amazing-slider__brands, .main-page-bestsilling-slider__brands {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 70%; }
+
+.main-page-amazing-slider__lastprice, .main-page-bestsilling-slider__lastprice {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8c8c;
+  text-decoration: line-through;
+  text-align: left; }
+
+.main-page-amazing-slider__name, .main-page-bestsilling-slider__name {
+  font-size: 16px;
+  text-align: right;
+  color: #666;
+  width: 60%;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.main-page-amazing-slider__price, .main-page-bestsilling-slider__price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00bf6f; }
+
+.main-page-amazing-slider__quantity, .main-page-bestsilling-slider__quantity {
+  background-color: #f16423;
+  color: white;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 15px;
+  font-size: 15px;
+  right: 18%;
+  width: 60%;
+  padding: 7px 0; }
+
+.main-page-amazing-slider__product-size a, .main-page-bestsilling-slider__product-size a {
+  width: 35px;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 1.7;
+  color: #8c8c8c;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 4px; }
+  .main-page-amazing-slider__product-size a:last-child, .main-page-bestsilling-slider__product-size a:last-child {
+    color: #f16423; }
+
+.main-page-amazing .btn-more, .main-page-bestsilling .btn-more {
+  color: #00bf6f;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 50em;
+  text-align: center;
+  transition: all 0.3s;
+  width: 20%;
+  padding: 13px; }
+  .main-page-amazing .btn-more:hover, .main-page-bestsilling .btn-more:hover {
+    border-width: 2px;
+    transition: all 0.3s; }
+  .main-page-amazing .btn-more:hover, .main-page-bestsilling .btn-more:hover {
+    border-color: #00bf6f;
+    border-width: 1px; }
