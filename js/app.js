@@ -46,21 +46,21 @@ var swiper = new Swiper(".swiper-amazing", {
   },
 });
 
-// var swiper = new Swiper(".swiper-bestsilling", {
-//   slidesPerView: 4,
-//   spaceBetween: 30,
-//   loop: true,
-//   // autoplay: {
-//   //   delay: 4500,
-//   //   disableOnInteraction: false,
-//   // },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-// countdown
+var swiper = new Swiper(".swiper-bestsilling", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  // autoplay: {
+  //   delay: 4500,
+  //   disableOnInteraction: false,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
+// countdown
 // Set the date we're counting down to
 var countDownDate = new Date("May 5, 2023 17:00:00").getTime();
 
