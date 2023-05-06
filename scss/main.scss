@@ -551,7 +551,8 @@ footer {
 
         figure {
           position: relative;
-          figcaption {
+
+          .cyrcle-badge {
             position: absolute;
             top: 20px;
             left: 20px;
@@ -564,6 +565,14 @@ footer {
             background-color: $orange-color;
             border-radius: 50em;
             text-align: center;
+          }
+
+          .semicircular-badge {
+            @extend .cyrcle-badge;
+            left: 0;
+            height: 30px;
+            line-height: 2;
+            border-radius: 0 25px 25px 0;
           }
         }
 
@@ -623,7 +632,18 @@ footer {
         right: 18%;
         width: 60%;
         padding: 7px 0;
+
+        &-green {
+          @extend .main-page-bestsilling-slider__quantity;
+
+          font-size: 14px;
+          right: 27%;
+          background-color: $green-color;
+          padding: 7px;
+          width: fit-content;
+        }
       }
+
       &__product-size {
         a {
           width: 35px;
