@@ -65,6 +65,16 @@ var swiper = new Swiper(".swiper-best-brands", {
   },
 });
 
+var swiper = new Swiper(".swiper-blog", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 // countdown
 // Set the date we're counting down to
 var countDownDate = new Date("May 5, 2023 17:00:00").getTime();

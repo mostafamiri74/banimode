@@ -2524,3 +2524,66 @@ footer .footer-social-icon li a {
     .main-page-best-brands .btn-more:hover {
       border-color: #00bf6f;
       border-width: 1px; }
+
+.main-page-blog h4 {
+  margin-bottom: 0; }
+
+.main-page-blog__slider .swiper-blog .swiper-slide {
+  display: block;
+  background: transparent; }
+
+.main-page-blog__slider .swiper-blog .swiper-button-next,
+.main-page-blog__slider .swiper-blog .swiper-button-prev {
+  color: #707070; }
+  .main-page-blog__slider .swiper-blog .swiper-button-next:after,
+  .main-page-blog__slider .swiper-blog .swiper-button-prev:after {
+    font-size: 23px; }
+
+.main-page-blog__slider .swiper-blog .swiper-button-next {
+  left: -6px; }
+
+.main-page-blog__slider .swiper-blog .swiper-button-prev {
+  right: -6px; }
+
+.main-page-blog .main-page-blog-slider__link figure img {
+  background-color: #fff;
+  border-radius: 0px; }
+
+.main-page-blog .main-page-blog-slider__link figure figcaption {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  font-size: 13px;
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-top: 30px; }
+
+.main-page-blog .main-page-blog-slider__link:hover figcaption {
+  color: #00bf6f; }
+
+.main-page-blog .btn-more {
+  color: #00bf6f;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 50em;
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 19px;
+  font-weight: 500;
+  width: 20%;
+  padding: 13px; }
+  .main-page-blog .btn-more:hover {
+    border-width: 2px;
+    transition: all 0.3s; }
+  .main-page-blog .btn-more:hover {
+    border-color: #00bf6f;
+    border-width: 1px; }
