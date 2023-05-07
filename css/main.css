@@ -2480,3 +2480,47 @@ footer .footer-social-icon li a {
   color: #666;
   font-size: 15px;
   padding: 0px 7px; }
+
+.main-page-best-brands {
+  background-color: #f9f9f9;
+  padding: 50px 0; }
+  .main-page-best-brands__slider .swiper-best-brands .swiper-slide {
+    display: block;
+    background: transparent; }
+  .main-page-best-brands__slider .swiper-best-brands .swiper-button-next,
+  .main-page-best-brands__slider .swiper-best-brands .swiper-button-prev {
+    color: #707070; }
+    .main-page-best-brands__slider .swiper-best-brands .swiper-button-next:after,
+    .main-page-best-brands__slider .swiper-best-brands .swiper-button-prev:after {
+      font-size: 23px; }
+  .main-page-best-brands__slider .swiper-best-brands .swiper-button-next {
+    left: -6px; }
+  .main-page-best-brands__slider .swiper-best-brands .swiper-button-prev {
+    right: -6px; }
+  .main-page-best-brands__title h4 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-align: center; }
+  .main-page-best-brands-slider__link figure img {
+    background-color: #fff;
+    border-radius: 10px; }
+  .main-page-best-brands .btn-more {
+    color: #00bf6f;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 50em;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 19px;
+    font-weight: 500;
+    width: 20%;
+    padding: 13px; }
+    .main-page-best-brands .btn-more:hover {
+      border-width: 2px;
+      transition: all 0.3s; }
+    .main-page-best-brands .btn-more:hover {
+      border-color: #00bf6f;
+      border-width: 1px; }

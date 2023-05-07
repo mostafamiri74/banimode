@@ -49,11 +49,16 @@ var swiper = new Swiper(".swiper-amazing", {
 var swiper = new Swiper(".swiper-bestsilling", {
   slidesPerView: 4,
   spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".swiper-best-brands", {
+  slidesPerView: 8,
+  spaceBetween: 40,
   loop: true,
-  // autoplay: {
-  //   delay: 4500,
-  //   disableOnInteraction: false,
-  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
