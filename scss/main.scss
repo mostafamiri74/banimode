@@ -52,6 +52,7 @@ a {
 }
 
 @media (min-width: 1200px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -400,6 +401,7 @@ footer {
 
 .main-page {
   &-slider {
+
     figure,
     figure img {
       border-radius: 16px;
@@ -412,12 +414,14 @@ footer {
       figure {
         height: 400px;
         border-radius: 16px;
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
+
       .swiper-left-top {
         @include slider();
       }
@@ -434,6 +438,7 @@ footer {
     &__item {
       &-link {
         position: relative;
+
         &::after {
           content: "";
           position: absolute;
@@ -447,6 +452,7 @@ footer {
           opacity: 0;
           border-radius: 8px;
         }
+
         &:hover {
           &::after {
             opacity: 1;
@@ -515,15 +521,19 @@ footer {
         }
       }
     }
+
     &__slider {
+
       .swiper-amazing,
       .swiper-bestsilling {
         .swiper-slide {
           display: block;
         }
+
         .swiper-button-next,
         .swiper-button-prev {
           color: #707070;
+
           &:after {
             font-size: 23px;
           }
@@ -655,18 +665,18 @@ footer {
           font-size: 15px;
           font-weight: 700;
           margin: 0 4px;
+
           &:last-child {
             color: $orange-color;
           }
         }
       }
     }
+
     .btn-more {
-      @include button(
-        $color: $green-color,
+      @include button($color: $green-color,
         $border-color: #ccc,
-        $background-color: white
-      );
+        $background-color: white);
 
       width: 20%;
       padding: 13px;
@@ -735,9 +745,11 @@ footer {
           display: block;
           background: transparent;
         }
+
         .swiper-button-next,
         .swiper-button-prev {
           color: #707070;
+
           &:after {
             font-size: 23px;
           }
@@ -774,11 +786,9 @@ footer {
     }
 
     .btn-more {
-      @include button(
-        $color: $green-color,
+      @include button($color: $green-color,
         $border-color: #ccc,
-        $background-color: transparent
-      );
+        $background-color: transparent);
       font-size: 19px;
       font-weight: 500;
       width: 20%;
@@ -790,4 +800,89 @@ footer {
       }
     }
   }
+
+  &-blog {
+    h4 {
+      margin-bottom: 0;
+    }
+
+    &__slider {
+      .swiper-blog {
+        .swiper-slide {
+          display: block;
+          background: transparent;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: #707070;
+
+          &:after {
+            font-size: 23px;
+          }
+        }
+
+        .swiper-button-next {
+          left: -6px;
+        }
+
+        .swiper-button-prev {
+          right: -6px;
+        }
+
+      }
+
+
+    }
+
+    .main-page-blog-slider__link {
+      figure {
+        img {
+          background-color: #fff;
+          border-radius: 0px;
+        }
+
+        figcaption {
+          text-decoration: none;
+          display: block;
+          color: #000;
+          font-size: 13px;
+          text-align: right;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          -webkit-transition: 0.2s all;
+          -o-transition: 0.2s all;
+          transition: 0.2s all;
+          margin-top: 30px;
+        }
+
+      }
+
+      &:hover {
+        figcaption {
+
+          color: $green-color;
+        }
+      }
+    }
+
+    .btn-more {
+      @include button($color: $green-color,
+        $border-color: #ccc,
+        $background-color: transparent);
+      font-size: 19px;
+      font-weight: 500;
+      width: 20%;
+      padding: 13px;
+
+      &:hover {
+        border-color: $green-color;
+        border-width: 1px;
+      }
+    }
+  }
+ 
 }
